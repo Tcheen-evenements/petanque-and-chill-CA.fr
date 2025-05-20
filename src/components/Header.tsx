@@ -7,13 +7,13 @@ export default function Header() {
       <div className="container mx-auto px-4 py-3">
         <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center space-x-4">
-            <div className="bg-[#00808b] p-2 rounded">
+            <div className="bg-white p-2 rounded">
               <Image
-                src="/images/ca-logo.svg"
-                alt="Crédit Agricole"
-                width={100}
-                height={32}
-                className="h-6 w-auto brightness-0 invert"
+                src="/images/ca-logo-aquitaine.svg"
+                alt="Crédit Agricole Aquitaine"
+                width={120}
+                height={40}
+                className="h-8 w-auto"
               />
             </div>
           </Link>

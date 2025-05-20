@@ -148,18 +148,18 @@ export default function HomePage() {
         <footer className="bg-gray-900 text-white py-12">
           <div className="container mx-auto px-4">
             <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
-              <div>
+              <div className="bg-white p-2 rounded">
                 <Image
-                  src="/images/ca-logo.svg"
-                  alt="Crédit Agricole"
+                  src="/images/ca-logo-aquitaine.svg"
+                  alt="Crédit Agricole Aquitaine"
                   width={120}
                   height={40}
-                  className="h-8 w-auto mb-4"
+                  className="h-8 w-auto"
                 />
-                <p className="text-gray-400">
-                  Tournoi de pétanque organisé par le Crédit Agricole
-                </p>
               </div>
+              <p className="text-gray-400">
+                Tournoi de pétanque organisé par le Crédit Agricole
+              </p>
               <div>
                 <h3 className="text-lg font-semibold mb-4">Liens utiles</h3>
                 <ul className="space-y-2">

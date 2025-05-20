@@ -314,14 +314,16 @@ export default function InscriptionPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <Image
-                src="/ca-logo.svg"
-                alt="Crédit Agricole"
-                width={120}
-                height={40}
-                className="h-8 w-auto mb-4"
-              />
-              <p className="text-gray-400">
+              <div className="bg-white p-2 rounded inline-block">
+                <Image
+                  src="/images/ca-logo-aquitaine.svg"
+                  alt="Crédit Agricole Aquitaine"
+                  width={120}
+                  height={40}
+                  className="h-8 w-auto"
+                />
+              </div>
+              <p className="text-gray-400 mt-4">
                 Tournoi de pétanque organisé par le Crédit Agricole
               </p>
             </div>
@@ -329,17 +331,22 @@ export default function InscriptionPage() {
               <h3 className="text-lg font-semibold mb-4">Liens utiles</h3>
               <ul className="space-y-2">
                 <li>
-                  <Link href="/programme" className="text-gray-400 hover:text-[#00808b]">
-                    Programme
+                  <Link href="/" className="text-gray-400 hover:text-white">
+                    Accueil
                   </Link>
                 </li>
                 <li>
-                  <Link href="/inscription" className="text-gray-400 hover:text-[#00808b]">
-                    Inscription
+                  <Link href="/comment-ca-marche" className="text-gray-400 hover:text-white">
+                    Comment ça marche ?
                   </Link>
                 </li>
                 <li>
-                  <Link href="/contact" className="text-gray-400 hover:text-[#00808b]">
+                  <Link href="/classement" className="text-gray-400 hover:text-white">
+                    Classement
+                  </Link>
+                </li>
+                <li>
+                  <Link href="/contact" className="text-gray-400 hover:text-white">
                     Contact
                   </Link>
                 </li>

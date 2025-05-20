@@ -103,13 +103,15 @@ export default function ContactPage() {
         <div className="container mx-auto px-4">
           <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
             <div>
-              <Image
-                src="/images/ca-logo.svg"
-                alt="Crédit Agricole"
-                width={120}
-                height={40}
-                className="h-8 w-auto mb-4"
-              />
+              <div className="bg-white p-2 rounded inline-block">
+                <Image
+                  src="/images/ca-logo-aquitaine.svg"
+                  alt="Crédit Agricole Aquitaine"
+                  width={120}
+                  height={40}
+                  className="h-8 w-auto"
+                />
+              </div>
               <p className="text-gray-400">
                 Tournoi de pétanque organisé par le Crédit Agricole
               </p>
