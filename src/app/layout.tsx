@@ -19,6 +19,11 @@ const poppins = Poppins({
 export const metadata: Metadata = {
   title: "Tournoi de Pétanque - Crédit Agricole",
   description: "Inscrivez-vous au tournoi de pétanque du Crédit Agricole",
+  icons: {
+    icon: [
+      { url: "/images/petanque-icon.svg", type: "image/svg+xml" },
+    ],
+  },
 };
 
 export default function RootLayout({
