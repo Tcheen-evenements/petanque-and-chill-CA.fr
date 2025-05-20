@@ -4,8 +4,8 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  basePath: process.env.GITHUB_ACTIONS ? '/petanque-and-chill-CA.fr' : '',
-  assetPrefix: process.env.GITHUB_ACTIONS ? '/petanque-and-chill-CA.fr' : ''
+  basePath: '',
+  assetPrefix: ''
 };
 
 module.exports = nextConfig;
