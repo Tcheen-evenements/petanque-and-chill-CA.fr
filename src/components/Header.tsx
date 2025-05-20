@@ -18,8 +18,8 @@ export default function Header() {
             </div>
           </Link>
           <nav className="flex space-x-6">
-            <Link href="/programme" className="text-[#00808b] font-medium hover:text-[#006d77]">
-              Programme
+            <Link href="/comment-ca-marche" className="text-[#00808b] font-medium hover:text-[#006d77]">
+              Comment ça marche ?
             </Link>
             <Link href="/classement" className="text-[#00808b] font-medium hover:text-[#006d77]">
               Classement

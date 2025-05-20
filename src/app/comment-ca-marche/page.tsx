@@ -4,7 +4,7 @@ import Header from '@/components/Header';
 import Link from 'next/link';
 import Image from 'next/image';
 
-export default function ProgrammePage() {
+export default function CommentCaMarchePage() {
   return (
     <div className="min-h-screen bg-white">
       <Header />
@@ -14,7 +14,7 @@ export default function ProgrammePage() {
         <div className="container mx-auto px-4">
           <div className="max-w-4xl mx-auto">
             <h1 className="text-5xl font-bold text-gray-900 mb-12 text-center">
-              Prêts pour le challenge ? 🎯
+              Comment ça marche ? 🎯
             </h1>
 
             <div className="space-y-8">
@@ -24,7 +24,7 @@ export default function ProgrammePage() {
                 <div className="space-y-6">
                   <div className="border-l-4 border-[#00808b] pl-4">
                     <h3 className="font-semibold text-lg mb-2">1. Formez votre dream team 🤝</h3>
-                    <p className="text-gray-600">Trouvez votre partenaire idéal et inscrivez-vous ! Que vous soyez pointeur de précision ou tireur d&apos;élite, c&apos;est le moment de briller. Les équipes seront regroupées par site pour plus de convivialité entre collègues.</p>
+                    <p className="text-gray-600">Formez votre équipe de 2 ou 3 joueurs et inscrivez-vous ! Que vous soyez pointeur de précision ou tireur d&apos;élite, c&apos;est le moment de briller. Les équipes seront regroupées par site pour plus de convivialité entre collègues.</p>
                   </div>
                   <div className="border-l-4 border-[#00808b] pl-4">
                     <h3 className="font-semibold text-lg mb-2">2. À vous de jouer ! ⭐</h3>
@@ -45,7 +45,7 @@ export default function ProgrammePage() {
                     <svg className="w-5 h-5 text-[#00808b] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M5 13l4 4L19 7" />
                     </svg>
-                    <span>Objectif : 13 points pour la victoire (mais le plaisir de jouer est infini 😉)</span>
+                    <span>Objectif : 9 points pour la victoire avec un point d’écart (mais le plaisir de jouer est infini 😉)</span>
                   </li>
                   <li className="flex items-start space-x-3">
                     <svg className="w-5 h-5 text-[#00808b] mt-1" fill="none" stroke="currentColor" viewBox="0 0 24 24">
