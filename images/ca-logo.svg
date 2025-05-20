@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="200" height="70" viewBox="0 0 200 70" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <g fill="#FFFFFF">
+        <!-- Logo simplifié du Crédit Agricole -->
+        <path d="M30,15 C30,15 45,25 45,35 C45,45 35,55 25,55 C15,55 5,45 5,35 C5,25 20,15 30,15 Z"/>
+        <text x="60" y="42" font-family="Arial" font-size="24" font-weight="bold">CRÉDIT</text>
+        <text x="60" y="62" font-family="Arial" font-size="24" font-weight="bold">AGRICOLE</text>
+    </g>
+</svg>
