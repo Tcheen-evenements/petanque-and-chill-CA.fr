@@ -16,12 +16,15 @@ jobs:
         uses: actions/setup-node@v3
         with:
           node-version: '18'
+          cache: 'npm'
 
       - name: Install dependencies
         run: npm ci
 
       - name: Build
         run: npm run build
+        env:
+          NEXT_PUBLIC_BASE_PATH: '/petanque-and-chill-CA.fr'
 
       - name: Copy CNAME
         run: cp CNAME ./out/
@@ -31,3 +34,5 @@ jobs:
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
           publish_dir: ./out
+          cname: petanque-and-chill.fr
+          enable_jekyll: false
