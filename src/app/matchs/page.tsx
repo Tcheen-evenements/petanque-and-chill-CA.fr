@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
+import Header from '@/components/Header';
 
 interface Match {
   id: string;
@@ -18,96 +19,20 @@ export default function MatchsPage() {
   const [matches, setMatches] = useState<Match[]>([]);
 
   useEffect(() => {
-    const mockMatches: Match[] = [
-      {
-        id: 'b1',
-        team1: 'Les Bacalanais',
-        team2: 'Les Quais',
-        site: 'Bacalan',
-        date: '2025-06-20',
-        score1: 13,
-        score2: 7,
-        status: 'completed'
-      },
-      {
-        id: 'a1',
-        team1: 'Les Adourables',
-        team2: 'Les Tireurs du Marsan',
-        site: "L'Aire sur l'Adour",
-        date: '2025-06-18',
-        score1: 13,
-        score2: 11,
-        status: 'completed'
-      },
-      {
-        id: 'ag1',
-        team1: 'Les Agenais',
-        team2: 'Les Pruniers',
-        site: 'Agen',
-        date: '2025-06-19',
-        score1: 13,
-        score2: 8,
-        status: 'completed'
-      },
-      {
-        id: 'a2',
-        team1: 'Les Landais',
-        team2: 'Les Adourables',
-        site: "L'Aire sur l'Adour",
-        date: '2025-06-27',
-        score1: null,
-        score2: null,
-        status: 'scheduled'
-      },
-      {
-        id: 'b2',
-        team1: 'Team Chartrons',
-        team2: 'Les Pointeurs du Port',
-        site: 'Bacalan',
-        date: '2025-06-25',
-        score1: null,
-        score2: null,
-        status: 'scheduled'
-      },
-      {
-        id: 'ag2',
-        team1: 'Team Garonne',
-        team2: 'Les Agenais',
-        site: 'Agen',
-        date: '2025-06-26',
-        score1: null,
-        score2: null,
-        status: 'scheduled'
-      }
-    ];
-    setMatches(mockMatches);
+    setMatches([]);
   }, []);
 
   return (
     <div className="min-h-screen bg-gray-50">
-      
+      <Header />
       <main className="container mx-auto px-4 pt-24 pb-12">
         <div className="mb-12">
           <h1 className="text-4xl font-bold text-center text-[#00808b] mb-6">
             Tous les matchs
           </h1>
-          <div className="flex justify-center space-x-4">
-            <Link href="/matchs" className="text-[#00808b] font-bold">
-              Tous les sites
-            </Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/matchs/bacalan" className="text-[#00808b] hover:text-[#006d77]">
-              Bacalan
-            </Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/matchs/aire-sur-adour" className="text-[#00808b] hover:text-[#006d77]">
-              L&apos;Aire sur l&apos;Adour
-            </Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/matchs/agen" className="text-[#00808b] hover:text-[#006d77]">
-              Agen
-            </Link>
-          </div>
+          <p className="text-center text-gray-600 text-lg">
+            Les matchs seront affichés dès le début du tournoi.
+          </p>
         </div>
 
         <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">

@@ -19,69 +19,7 @@ export default function RankingPage() {
   const [teams, setTeams] = useState<Team[]>([]);
 
   useEffect(() => {
-    const mockTeams: Team[] = [
-      {
-        name: 'Les Bacalanais',
-        site: 'Bacalan',
-        matchesPlayed: 2,
-        wins: 2,
-        losses: 0,
-        pointsFor: 26,
-        pointsAgainst: 14,
-        points: 6
-      },
-      {
-        name: 'Les Adourables',
-        site: "L'Aire sur l'Adour",
-        matchesPlayed: 2,
-        wins: 2,
-        losses: 0,
-        pointsFor: 26,
-        pointsAgainst: 15,
-        points: 6
-      },
-      {
-        name: 'Les Agenais',
-        site: 'Agen',
-        matchesPlayed: 2,
-        wins: 2,
-        losses: 0,
-        pointsFor: 26,
-        pointsAgainst: 15,
-        points: 6
-      },
-      {
-        name: 'Team Chartrons',
-        site: 'Bacalan',
-        matchesPlayed: 2,
-        wins: 1,
-        losses: 1,
-        pointsFor: 20,
-        pointsAgainst: 19,
-        points: 3
-      },
-      {
-        name: 'Les Tireurs du Marsan',
-        site: "L'Aire sur l'Adour",
-        matchesPlayed: 2,
-        wins: 1,
-        losses: 1,
-        pointsFor: 24,
-        pointsAgainst: 20,
-        points: 3
-      },
-      {
-        name: 'Team Garonne',
-        site: 'Agen',
-        matchesPlayed: 2,
-        wins: 1,
-        losses: 1,
-        pointsFor: 23,
-        pointsAgainst: 20,
-        points: 3
-      }
-    ];
-    setTeams(mockTeams);
+    setTeams([]);
   }, []);
 
   return (
@@ -93,23 +31,9 @@ export default function RankingPage() {
           <h1 className="text-4xl font-bold text-center text-[#00808b] mb-6">
             Classement général
           </h1>
-          <div className="flex justify-center space-x-4">
-            <Link href="/classement" className="text-[#00808b] font-bold">
-              Tous les sites
-            </Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/classement/bacalan" className="text-[#00808b] hover:text-[#006d77]">
-              Bacalan
-            </Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/classement/aire-sur-adour" className="text-[#00808b] hover:text-[#006d77]">
-              L&apos;Aire sur l&apos;Adour
-            </Link>
-            <span className="text-gray-300">|</span>
-            <Link href="/classement/agen" className="text-[#00808b] hover:text-[#006d77]">
-              Agen
-            </Link>
-          </div>
+          <p className="text-center text-gray-600 text-lg">
+            Le classement sera disponible dès le début du tournoi.
+          </p>
         </div>
 
         <div className="bg-white rounded-xl shadow-lg overflow-hidden">
